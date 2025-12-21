@@ -5,6 +5,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
+    os.makedirs("/data", exist_ok=True)
+    with open("/data/hits.txt", "a") as f:
+        f.write("hit\n")
     return "Legend DevOps App Running"
 
 if __name__ == "__main__":
