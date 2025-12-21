@@ -1,4 +1,5 @@
-Day 3 – Environment Variables and Docker Volumes
+Day 3 – Environment Variables and Docker Volumes 
+
 Containers are stateless by default because any data written inside the container filesystem is lost when the container stops or is recreated. Containers are designed to be disposable and ephemeral.
 
 Environment variables are used to change application configuration at runtime without modifying application code or rebuilding the Docker image. For example, our Flask application listens on port 5000 by default, but we can change its behavior at runtime using:
