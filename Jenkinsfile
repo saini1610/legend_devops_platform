@@ -1,5 +1,9 @@
 pipeline {
-    agent { label 'any' }
+    agent any
+
+    environment {
+        DOCKER_HOST = 'npipe:////./pipe/docker_engine'
+    }
 
     stages {
 
